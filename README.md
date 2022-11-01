@@ -30,22 +30,24 @@ writing 규칙을 조정하여 사용할 수 있습니다.
 분야: Library  
 도구: Android, Jetpack Compose
 
-여러 내용들을 반복하여 순차적으로 가져오기 위한 라이브러리 입니다. Android Jetpack 의 Paging 과 유사하며, Paging 보다 쉽고 간결한 API 제공을 위해 개발됩니다.
+여러 내용들을 반복하여 순차적으로 가져오기 위한 라이브러리 입니다.
+Android Jetpack 의 Paging 과 유사하며, Paging 보다 쉽고 간결한 API 제공을 위해 개발됩니다.
 
 ## [composable-function-reference-error-suppressor](https://github.com/duckie-team/composable-function-reference-diagnostic-suppressor)
 
 분야: Plugin  
 도구: Kotlin Compiler, Jetpack Compose
 
-Composable 함수를 레퍼런스 참조하게 되면 발생하는 `COMPOSABLE_FUNCTION_REFERENCE` 에러를 억제시키는 코틀린 컴파일러 플러그인 입니다. Composable 함수에 리플렉션이
-필요할 때 사용할 수 있습니다.
+Composable 함수를 레퍼런스 참조하게 되면 발생하는 `COMPOSABLE_FUNCTION_REFERENCE` 에러를 억제시키는 코틀린 컴파일러 플러그인 입니다.
+Composable 함수에 리플렉션이 필요할 때 사용할 수 있습니다.
 
 ### [quack-tracker](https://github.com/duckie-team/quack-tracker)
 
 분야: Library  
 도구: Android, Jetpack Compose
 
-사용자가 현재 화면을 얼마나 보고 있고, 어떤 컴포넌트들을 확인하였는지 추적하기 위한 라이브러리 입니다.  서비스 기획에 도움이 될 수 있습니다.
+사용자가 현재 화면을 얼마나 보고 있고, 어떤 컴포넌트들을 확인하였는지 추적하기 위한 라이브러리 입니다.
+서비스 기획에 도움이 될 수 있습니다.
 
 ### [DuckiePlayer](https://github.com/duckie-team/DuckiePlayer)
 
@@ -60,7 +62,8 @@ Composable 함수를 레퍼런스 참조하게 되면 발생하는 `COMPOSABLE_F
 분야: Library  
 도구: Kotlin
 
-코틀린의 DSL 속성을 이용한 Github Flavored Markdown 빌더입니다. 동적으로 Markdown 컨텐츠 생성이 필요할 때 사용할 수 있습니다.
+코틀린의 DSL 속성을 이용한 Github Flavored Markdown 빌더입니다.
+동적으로 Markdown 컨텐츠 생성이 필요할 때 사용할 수 있습니다.
 
 ### [duckie-domain-shortener](https://github.com/duckie-team/duckie-domain-shortener)
 
