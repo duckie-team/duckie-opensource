@@ -4,6 +4,24 @@
  * work well for content-centric websites.
  */
 
+ @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+* {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+*::selection {
+  background: #ffc28f;
+}
+
+html[data-theme='dark'] *::selection {
+  background: #a06f46;
+}
+
+* {
+  --ifm-navbar-height: 48px;
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: hsl(31, 100%, 50%);
@@ -28,3 +46,4 @@
   --ifm-color-primary-lightest: hsl(31, 100%, 46%);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+

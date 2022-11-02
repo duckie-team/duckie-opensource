@@ -54,7 +54,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "<b>Duckie</>",
+        logo: {
+          src: "img/title.svg",
+        },
         items: [
           {
             type: "doc",

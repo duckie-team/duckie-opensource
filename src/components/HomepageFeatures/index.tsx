@@ -10,32 +10,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Easy to Use",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    title: "유연성",
+    Svg: require("@site/static/img/index_icon_1.svg").default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Duckie 팀은 오픈소스 생태계를 존중합니다. 따라서 Duckie 제품이 아닌 모든
+        제품에서도 활용될 수 있게 설계합니다.
       </>
     ),
   },
   {
-    title: "Focus on What Matters",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    title: "간결성",
+    Svg: require("@site/static/img/index_icon_2.svg").default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        최소한의 부분만 노출시켜 불필요한 설정 없이 쉽고 간편하게 커스터마이징
+        할 수 있게 설계합니다.
       </>
     ),
   },
   {
-    title: "Powered by React",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    title: "성능",
+    Svg: require("@site/static/img/index_icon_3.svg").default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Duckie팀은 성능을 가장 중요시 합니다. 쉽고 간편한 사용성뿐만 아니라
+        최상의 성능을 발휘할 수 있도록 설계합니다.
       </>
     ),
   },
