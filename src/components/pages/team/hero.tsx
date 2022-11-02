@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { Flex } from "../flex";
-import { DuckieIcon } from "../duckie-icon";
+import { DuckieIcon } from "../../duckie-icon";
 
 const Container = styled.div`
   margin-top: 96px;
+  margin-bottom: 128px;
 
   @media (max-width: 810px) {
     margin-top: 36px;
@@ -34,7 +34,7 @@ const Title = styled.h1`
     height: 16px;
     border-radius: 8px;
     bottom: 80px;
-    left: 520px;
+    left: 470px;
     background-color: #ff8300;
     position: absolute;
   }
@@ -47,7 +47,7 @@ const Title = styled.h1`
       height: 8px;
       border-radius: 8px;
       bottom: 40px;
-      left: 260px;
+      left: 240px;
       background-color: #ff8300;
       position: absolute;
     }
@@ -56,7 +56,7 @@ const Title = styled.h1`
 
 const Desc = styled.p`
   color: var(--ifm-color-emphasis-600);
-  font-size: 14px;
+  font-size: 20px;
 `;
 
 const Duckie = styled.div`
@@ -69,7 +69,7 @@ const Duckie = styled.div`
   }
 `;
 
-export function HomepageHero() {
+export function TeamPageHero() {
   return (
     <section>
       <Container className="container">
@@ -79,14 +79,11 @@ export function HomepageHero() {
           </Duckie>
           <div>
             <Title>
-              Duckie
+              덕키를
               <br />
-              Open Source
+              만드는 사람들
             </Title>
-            <Desc>
-              덕키는 개발의 편의를 위해 개발된 모든 제품을 오픈소스로
-              공개합니다.
-            </Desc>
+            <Desc>덕질에 진심인 사람들, 덕키 팀 😎</Desc>
           </div>
         </Divver>
       </Container>

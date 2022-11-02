@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { Project } from "./project";
-import DocusaurusImageUrl from "../../../static/img/example.png";
+import { Article } from "./article";
 import clsx from "clsx";
-import { projects } from "@site/data/project";
 import { Flex } from "../flex";
 import { ShowMoreButton } from "../buttons/showMore";
+import { articles } from "@site/data/article";
 
 const Container = styled.div``;
 
@@ -30,33 +29,29 @@ const Row = styled.div`
   }
 `;
 
-export function HomepageProjects() {
+export function HomepageArticles() {
   return (
     <section>
       <Container className="container">
         <div>
           <div>
-            <Title>Featured Projects</Title>
+            <Title>Featured Articles</Title>
           </div>
         </div>
         <Row>
-          {Object.values(projects)
-            .filter((e) => e.showFeaturedProjects)
-            .map((project) => (
-              <Project
-                title={project.name}
-                content={project.description}
-                tags={project.tags}
-                backgroundImage={project.backgroundImage}
-                icons={project.target}
-                link={project.link}
-                key={project.name}
-              />
-            ))}
+          {articles.map((e, i) => (
+            <Article
+              backgroundImage={e.backgroundImage}
+              content={e.content}
+              link={e.link}
+              title={e.title}
+              key={i}
+            />
+          ))}
         </Row>
         <Flex.Center style={{ marginTop: "50px" }}>
-          <ShowMoreButton href="https://github.com/duckie-team">
-            모든 프로젝트
+          <ShowMoreButton href="https://blog.duckie.team/" target={"_blank"}>
+            Medium 에서 더 많은 글 보기
           </ShowMoreButton>
         </Flex.Center>
       </Container>

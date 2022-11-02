@@ -4,36 +4,28 @@ import styled from "styled-components";
 
 const BackgroundImage = styled.img`
   width: 100%;
-  height: 150px;
+  aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 8px;
   transition: 300ms;
+  user-select: none;
 
   @media (max-width: 1440px) {
     width: 100%;
   }
 `;
 
-const Outer = styled.a`
+const Outer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   transition: 300ms;
   width: 100%;
-
-  &:hover {
-    text-decoration: none !important;
-    transform: translateY(-4px);
-
-    ${BackgroundImage} {
-      transform: scale(1.05);
-    }
-  }
 `;
 
 const BackgroundImageOuter = styled.div`
   width: 100%;
-  height: 150px;
+  aspect-ratio: 1/1;
   border-radius: 8px;
   overflow: hidden;
 
@@ -42,42 +34,38 @@ const BackgroundImageOuter = styled.div`
   }
 `;
 
-const Title = styled.div`
+const Name = styled.div`
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
   color: var(--ifm-font-color-base);
+  margin-top: 16px;
 `;
-const Content = styled.div`
+const Desc = styled.div`
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: var(--ifm-color-emphasis-600);
 `;
-const ViewMore = styled.a`
-  text-decoration: underline;
-`;
 
-export function Article({
-  backgroundImage,
-  title,
-  content,
-  link,
+export function Member({
+  image,
+  name,
+  desc,
 }: {
-  backgroundImage: string;
-  title: string;
-  content: string;
-  link: string;
+  image: string;
+  name: string;
+  desc: string;
 }) {
   return (
-    <Outer href={link} target="_blank">
+    <Outer>
       <BackgroundImageOuter>
-        <BackgroundImage src={backgroundImage} />
+        <BackgroundImage src={image} />
       </BackgroundImageOuter>
-      <Title>{title}</Title>
-      <Content>{content}</Content>
+      <Name>{name}</Name>
+      <Desc>{desc}</Desc>
     </Outer>
   );
 }

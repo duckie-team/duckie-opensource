@@ -12,7 +12,7 @@ const config = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -58,18 +58,9 @@ const config = {
           src: "img/title.svg",
         },
         items: [
-          {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "Tutorial",
-          },
-          { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
-            position: "right",
-          },
+          // { to: "/about", label: "About", position: "right" },
+          // { to: "/projects", label: "Projects", position: "right" },
+          { to: "/team", label: "Team Duckie", position: "right" },
         ],
       },
       footer: {},

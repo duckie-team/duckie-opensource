@@ -29,7 +29,6 @@ const Divver = styled.div<{ isHover: boolean }>`
   width: fit-content;
   height: fit-content;
   position: relative;
-  z-index: 1000;
 
   ${(props) =>
     props.isHover &&

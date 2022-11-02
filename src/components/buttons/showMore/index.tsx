@@ -2,7 +2,7 @@ import Link from "@docusaurus/Link";
 import React from "react";
 import styled from "styled-components";
 
-const StyledButton = styled.a`
+export const ShowMoreButton = styled.a`
   border: solid 1px var(--ifm-color-emphasis-600);
   padding: 12px 40px;
   border-radius: 8px;
@@ -17,17 +17,3 @@ const StyledButton = styled.a`
     text-decoration: none;
   }
 `;
-
-export function ShowMoreButton({
-  children,
-  href,
-}: {
-  children: React.ReactNode;
-  href: string;
-}) {
-  return (
-    <StyledButton as={Link} href={href}>
-      {children}
-    </StyledButton>
-  );
-}
