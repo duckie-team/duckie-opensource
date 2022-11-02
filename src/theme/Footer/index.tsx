@@ -52,10 +52,21 @@ function Footer() {
       </Flex>
       <Flex>
         <Nav>
-          <NavItem href="/">Team Duckie</NavItem>
-          <NavItem href="/">Instagram</NavItem>
-          <NavItem href="/">Twitter</NavItem>
-          <NavItem href="/">Contact</NavItem>
+          <NavItem target={"_blank"} href="https://duckie.team">
+            Team Duckie
+          </NavItem>
+          <NavItem
+            target={"_blank"}
+            href="https://www.instagram.com/duckie_team/"
+          >
+            Instagram
+          </NavItem>
+          <NavItem target={"_blank"} href="https://twitter.com/duckie_team">
+            Twitter
+          </NavItem>
+          <NavItem target={"_blank"} href="mailto://developers@duckie.team">
+            Contact
+          </NavItem>
         </Nav>
       </Flex>
     </StyledFooter>
