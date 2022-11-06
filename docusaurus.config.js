@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Duckie Open Source",
-  tagline: "Dinosaurs are cool",
+  tagline: "덕키는 모든 제품을 오픈소스로 공개합니다.",
   url: "https://opensource.duckie.team",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -68,6 +68,32 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      metadata: [
+        {
+          property: "og:type",
+          content: "website",
+        },
+        {
+          property: "og:url",
+          content: "https://opensource.duckie.team",
+        },
+        {
+          property: "og:title",
+          content: "Duckie Open Source",
+        },
+        {
+          property: "og:image",
+          content: "https://opensource.duckie.team/duckie.png",
+        },
+        {
+          property: "og:description",
+          content: "덕키는 모든 제품을 오픈소스로 공개합니다.",
+        },
+        {
+          property: "og:site_name",
+          content: "duckie open source",
+        },
+      ],
     }),
 };
 
