@@ -14,7 +14,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require("@site/static/img/index_icon_1.svg").default,
     description: (
       <>
-        Duckie 팀은 오픈소스 생태계를 존중합니다. 따라서 Duckie 제품이 아닌 모든
+        덕키 팀은 오픈소스 생태계를 존중합니다. 따라서 Duckie 제품이 아닌 모든
         제품에서도 활용될 수 있게 설계합니다.
       </>
     ),
@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require("@site/static/img/index_icon_3.svg").default,
     description: (
       <>
-        Duckie팀은 성능을 가장 중요시 합니다. 쉽고 간편한 사용성뿐만 아니라
+        덕키 팀은 성능을 가장 중요시 합니다. 쉽고 간편한 사용성뿐만 아니라
         최상의 성능을 발휘할 수 있도록 설계합니다.
       </>
     ),
