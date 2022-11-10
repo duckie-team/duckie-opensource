@@ -59,7 +59,7 @@ const config = {
         },
         items: [
           // { to: "/about", label: "About", position: "right" },
-          // { to: "/projects", label: "Projects", position: "right" },
+          { to: "/project", label: "Project", position: "right" },
           { to: "/team", label: "Team Duckie", position: "right" },
         ],
       },

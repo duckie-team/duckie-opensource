@@ -1,8 +1,8 @@
 import clsx from "clsx";
 import React from "react";
 import styled from "styled-components";
-import { siAndroid } from "simple-icons/icons";
 import { ToolTip } from "../tooltip";
+import Link from "@docusaurus/Link";
 
 const BackgroundImage = styled.img`
   width: 100%;
@@ -16,11 +16,16 @@ const BackgroundImage = styled.img`
   }
 `;
 
-const Outer = styled.a`
+const Outer = styled(Link)`
   display: flex;
   flex-direction: column;
   gap: 8px;
   transition: 300ms;
+  /* border: solid 1px var(--ifm-color-emphasis-300);
+  padding: 20px; */
+  border-radius: 12px;
+  width: 100%;
+  flex: 1 1;
 
   &:hover {
     text-decoration: none !important;
@@ -66,14 +71,14 @@ const Tags = styled.div`
 `;
 const Tag = styled.div`
   padding: 2px 6px;
-  background-color: rgba(255, 243, 228, 0.3);
+  background-color: rgba(239, 138, 51, 0.15);
   color: #ef8a33;
   border-radius: 4px;
   font-size: 14px;
 `;
 
 const Icon = styled.div`
-  background-color: rgba(241, 241, 241, 0.2);
+  background-color: var(--ifm-color-emphasis-100);
   border-radius: 4px;
   width: 28px;
   height: 28px;
@@ -84,7 +89,7 @@ const Icon = styled.div`
   svg {
     width: 20px;
     height: 20px;
-    fill: #aeaeae;
+    fill: var(--ifm-color-emphasis-500);
   }
 `;
 const Icons = styled.div`
@@ -93,7 +98,7 @@ const Icons = styled.div`
   gap: 8px;
 `;
 
-export function Project({
+export function ProjectCard({
   backgroundImage,
   title,
   content,

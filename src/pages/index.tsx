@@ -15,7 +15,7 @@ const Divver = styled.div`
   margin-bottom: 96px;
   display: flex;
   flex-direction: column;
-  gap: 96px;
+  gap: 160px;
 `;
 
 export default function Home(): JSX.Element {

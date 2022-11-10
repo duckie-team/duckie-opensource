@@ -1,12 +1,19 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "./styles.module.css";
+import styled from "styled-components";
 
 type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<"svg">>;
   description: JSX.Element;
 };
+
+const Desc = styled.p`
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 16px;
+`;
 
 const FeatureList: FeatureItem[] = [
   {
@@ -45,11 +52,18 @@ function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Svg
+          className={styles.featureSvg}
+          role="img"
+          style={{ width: "100px", height: "100px" }}
+        />
       </div>
-      <div className="text--center padding-horiz--md">
+      <div
+        className="text--center padding-horiz--md"
+        style={{ marginTop: "16px" }}
+      >
         <h3>{title}</h3>
-        <p>{description}</p>
+        <Desc>{description}</Desc>
       </div>
     </div>
   );
@@ -57,7 +71,7 @@ function Feature({ title, Svg, description }: FeatureItem) {
 
 export default function HomepageFeatures(): JSX.Element {
   return (
-    <section className={styles.features}>
+    <section className={styles.features} style={{ marginTop: "-64px" }}>
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (

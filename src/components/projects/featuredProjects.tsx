@@ -1,24 +1,25 @@
 import React from "react";
 import styled from "styled-components";
-import { Project } from "./project";
+import { ProjectCard } from "./projectCard";
 import DocusaurusImageUrl from "../../../static/img/example.png";
 import clsx from "clsx";
 import { projects } from "@site/data/project";
 import { Flex } from "../flex";
 import { ShowMoreButton } from "../buttons/showMore";
+import { db } from "@site/data/db";
 
 const Container = styled.div``;
 
 const Title = styled.h3`
   display: block;
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 `;
 
 const Row = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 16px;
+  gap: 32px;
   row-gap: 48px;
 
   @media (max-width: 996px) {
@@ -40,15 +41,15 @@ export function HomepageProjects() {
           </div>
         </div>
         <Row>
-          {Object.values(projects)
+          {db.projects
             .filter((e) => e.showFeaturedProjects)
             .map((project) => (
-              <Project
+              <ProjectCard
                 title={project.name}
                 content={project.description}
                 tags={project.tags}
                 backgroundImage={project.backgroundImage}
-                icons={project.target}
+                icons={project.targets}
                 link={project.link}
                 key={project.name}
               />
@@ -56,7 +57,7 @@ export function HomepageProjects() {
         </Row>
         <Flex.Center style={{ marginTop: "50px" }}>
           <ShowMoreButton href="https://github.com/duckie-team">
-            모든 프로젝트
+            모든 프로젝트 보기
           </ShowMoreButton>
         </Flex.Center>
       </Container>

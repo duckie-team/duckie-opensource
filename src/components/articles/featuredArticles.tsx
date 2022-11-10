@@ -11,13 +11,13 @@ const Container = styled.div``;
 const Title = styled.h3`
   display: block;
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 `;
 
 const Row = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 16px;
+  gap: 32px;
   row-gap: 48px;
 
   @media (max-width: 996px) {

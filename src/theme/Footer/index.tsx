@@ -16,6 +16,7 @@ const StyledFooter = styled.footer`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 8px;
 `;
 const FooterTitle = styled.div`
   color: #ff8800;
