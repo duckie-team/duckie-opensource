@@ -33,7 +33,7 @@ export const members: Member[] = [
   {
     name: "혀느현스",
     image: Member혀느현스,
-    desc: "고등학생 개발자",
+    desc: "고등학생 개발자 🔭",
   },
   {
     name: "임세현",
