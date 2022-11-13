@@ -2,7 +2,7 @@ import Link from "@docusaurus/Link";
 import React from "react";
 import styled from "styled-components";
 
-export const ShowMoreButton = styled.a`
+export const ShowMoreButton = styled(Link)`
   border: solid 1px var(--ifm-color-emphasis-600);
   padding: 12px 40px;
   border-radius: 8px;

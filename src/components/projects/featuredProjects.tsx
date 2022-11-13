@@ -56,9 +56,7 @@ export function HomepageProjects() {
             ))}
         </Row>
         <Flex.Center style={{ marginTop: "50px" }}>
-          <ShowMoreButton href="https://github.com/duckie-team">
-            모든 프로젝트 보기
-          </ShowMoreButton>
+          <ShowMoreButton href="/project">모든 프로젝트 보기</ShowMoreButton>
         </Flex.Center>
       </Container>
     </section>

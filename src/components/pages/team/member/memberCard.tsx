@@ -50,14 +50,29 @@ const Desc = styled.div`
   color: var(--ifm-color-emphasis-600);
 `;
 
+const Tags = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+`;
+const Tag = styled.div`
+  padding: 2px 6px;
+  background-color: rgba(239, 138, 51, 0.15);
+  color: #ef8a33;
+  border-radius: 4px;
+  font-size: 14px;
+`;
+
 export function Member({
   image,
   name,
   desc,
+  role,
 }: {
   image: string;
   name: string;
   desc: string;
+  role: string[];
 }) {
   return (
     <Outer>
@@ -66,6 +81,11 @@ export function Member({
       </BackgroundImageOuter>
       <Name>{name}</Name>
       <Desc>{desc}</Desc>
+      <Tags>
+        {role.map((e) => (
+          <Tag key={e}>{e}</Tag>
+        ))}
+      </Tags>
     </Outer>
   );
 }
