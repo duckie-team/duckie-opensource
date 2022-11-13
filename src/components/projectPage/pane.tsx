@@ -203,7 +203,9 @@ export function ProjectPane({
           <BigTextIcon>
             <Git />
           </BigTextIcon>
-          <BigText href={repositoryUrl}>{repositoryUrl}</BigText>
+          <BigText href={repositoryUrl}>
+            {repositoryUrl.replace("https://", "")}
+          </BigText>
         </BigTextDivver>
       </Flex.Column>
       <Border />
@@ -213,7 +215,9 @@ export function ProjectPane({
             <Label>Docs</Label>
             <BigTextDivver>
               <BigTextIcon>{BookSvg}</BigTextIcon>
-              <BigText href={docsUrl}>{docsUrl}</BigText>
+              <BigText
+                href={docsUrl}
+              >{`${window.location.hostname}${docsUrl}`}</BigText>
             </BigTextDivver>
           </Flex.Column>
 

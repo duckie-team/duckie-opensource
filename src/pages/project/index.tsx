@@ -4,7 +4,9 @@ import styled from "styled-components";
 import { db } from "@site/data/db";
 import { ProjectCard } from "@site/src/components/projects/projectCard";
 
-const Container = styled.div``;
+const Container = styled.div`
+  margin-bottom: 64px;
+`;
 
 const Row = styled.div`
   display: grid;

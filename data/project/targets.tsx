@@ -4,6 +4,7 @@ import {
   Android,
   Jetpackcompose,
   ReactJs,
+  Kotlin,
 } from "@icons-pack/react-simple-icons";
 
 export const targets = {
@@ -18,5 +19,9 @@ export const targets = {
   react: {
     name: "react",
     icon: <ReactJs />,
+  },
+  kotlin: {
+    name: "Kotlin",
+    icon: <Kotlin />,
   },
 };

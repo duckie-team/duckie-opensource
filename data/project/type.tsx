@@ -3,7 +3,8 @@ export type Tag =
   | "Code Style"
   | "UX Writing"
   | "Plugin"
-  | "Web";
+  | "Web"
+  | "Library";
 
 export type Target = {
   name: string;

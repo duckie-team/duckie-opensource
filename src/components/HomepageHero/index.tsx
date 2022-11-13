@@ -56,7 +56,7 @@ const Title = styled.h1`
 
 const Desc = styled.p`
   color: var(--ifm-color-emphasis-600);
-  font-size: 14px;
+  font-size: 20px;
 `;
 
 const Duckie = styled.div`
