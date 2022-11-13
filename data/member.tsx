@@ -6,6 +6,7 @@ import Member세현 from "../static/img/team/세현 frame.jpg";
 import Member상우 from "../static/img/team/상우 frame.png";
 import Member혜진 from "../static/img/team/혜진 frame.png";
 import Member이재웅 from "../static/img/team/이재웅 frame.jpg";
+import Member서정원 from "../static/img/team/서정원 frame.jpg";
 import Placeholder from "../static/img/team/placeholder.png";
 
 type Member = {
@@ -67,9 +68,9 @@ export const members: Member[] = [
     role: ["Backend"],
   },
   {
-    name: "Jeongwon seo",
-    image: Placeholder,
-    desc: "",
+    name: "서정원",
+    image: Member서정원,
+    desc: "정원입니다",
     role: ["Backend"],
   },
   {

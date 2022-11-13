@@ -7,6 +7,7 @@ import { ProjectHeader } from "./header";
 import { ProjectContent } from "./content";
 import { PaneAbout, PaneContributor, ProjectPane } from "./pane";
 import { ProjectTag } from "@site/data/project";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 const BookSVG = (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
@@ -76,7 +77,7 @@ const EyeSvg = (
   </svg>
 );
 
-export function ProjectPage({ name }: { name: string }): JSX.Element {
+function ProjectPageInner({ name }: { name: string }): JSX.Element {
   const project = db.projects.find((e) => e.name === name);
 
   const projectOwner = project.repositoryUrl.split("/")[3];
@@ -168,4 +169,8 @@ export function ProjectPage({ name }: { name: string }): JSX.Element {
       </main>
     </Layout>
   );
+}
+
+export function ProjectPage({ name }: { name: string }) {
+  return <BrowserOnly>{() => <ProjectPageInner name={name} />}</BrowserOnly>;
 }
