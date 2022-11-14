@@ -22,7 +22,7 @@ export const members: Member[] = [
   {
     name: "성빈",
     image: Member성빈,
-    desc: "android engineer since 2015 / deep diver / documentationer",
+    desc: "덕키를 덕질 플랫폼의 Number. 1 으로 만들기 위해 끊임없이 고민하는 덕키 프로젝트 리더, 성빈 입니다.",
     role: ["Project Leader", "Android"],
   },
   {
