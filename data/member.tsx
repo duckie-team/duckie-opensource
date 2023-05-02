@@ -20,33 +20,9 @@ type Member = {
 
 export const members: Member[] = [
   {
-    name: "성빈",
-    image: Member성빈,
-    desc: "덕키를 덕질 플랫폼의 Number. 1 으로 만들기 위해 끊임없이 고민하는 덕키 프로젝트 리더, 성빈 입니다.",
-    role: ["Project Leader", "Android"],
-  },
-  {
     name: "Evergreen",
     image: MemberEvergreen,
     desc: "녹색 안드로이드 개발자 최상록 입니다",
-    role: ["Android"],
-  },
-  {
-    name: "doro",
-    image: MemberDoro,
-    desc: "열심히 살지 말자",
-    role: ["Project Manager", "IOS"],
-  },
-  {
-    name: "혀느현스",
-    image: Member혀느현스,
-    desc: "고등학생 개발자 🔭",
-    role: ["Web", "Backend", "Web design"],
-  },
-  {
-    name: "임세현",
-    image: Member세현,
-    desc: "열정으로 일하는 개발자 임세현입니다 🔥",
     role: ["Android"],
   },
   {
@@ -56,10 +32,22 @@ export const members: Member[] = [
     role: ["Android"],
   },
   {
-    name: "김혜진",
-    image: Member혜진,
-    desc: "사용자의 목소리에 집중하는 불편수집가, 주니어 프로덕트 디자이너 김혜진입니다 :)",
-    role: ["Product Designer"],
+    name: "임세현",
+    image: Member세현,
+    desc: "열정으로 일하는 개발자 임세현입니다 🔥",
+    role: ["Android"],
+  },
+  {
+    name: "성빈",
+    image: Member성빈,
+    desc: "덕키의 디자인 시스템 “꽥꽥“을 개발합니다. 꽥꽥을 사용하는 개발자와, 꽥꽥으로 덕키를 마주할 사용자에게 항상 최고의 경험을 제공하기 위해 끊임없이 고민하고 도전합니다.",
+    role: ["Android", "Design System Eng"],
+  },
+  {
+    name: "doro",
+    image: MemberDoro,
+    desc: "열심히 살지 말자",
+    role: ["PM", "iOS", "Backend"],
   },
   {
     name: "이재웅",
@@ -68,10 +56,24 @@ export const members: Member[] = [
     role: ["Backend"],
   },
   {
+    name: "김혜진",
+    image: Member혜진,
+    desc: "사용자의 목소리에 집중하는 불편수집가, 주니어 프로덕트 디자이너 김혜진입니다 :)",
+    role: ["Product Designer"],
+  },
+  {
+    name: "혀느현스",
+    image: Member혀느현스,
+    desc: "고등학생 개발자 🔭",
+    role: ["Web", "Backend"],
+    isSpecialThanks: true,
+  },
+  {
     name: "서정원",
     image: Member서정원,
     desc: "정원입니다",
     role: ["Backend"],
+    isSpecialThanks: true,
   },
   {
     name: "희선",
