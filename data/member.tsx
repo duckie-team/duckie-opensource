@@ -20,12 +20,6 @@ type Member = {
 
 export const members: Member[] = [
   {
-    name: "성빈",
-    image: Member성빈,
-    desc: "덕키의 디자인 시스템 “꽥꽥“을 개발합니다. 꽥꽥을 사용하는 개발자와, 꽥꽥으로 덕키를 마주할 사용자에게 항상 최고의 경험을 제공하기 위해 끊임없이 고민하고 도전합니다.",
-    role: ["Android", "Design System Eng"],
-  },
-  {
     name: "김혜진",
     image: Member혜진,
     desc: "사용자의 목소리에 집중하는 불편수집가, 주니어 프로덕트 디자이너 김혜진입니다 :)",
@@ -81,5 +75,12 @@ export const members: Member[] = [
     desc: "",
     isSpecialThanks: true,
     role: ["Web design"],
+  },
+  {
+    name: "성빈",
+    image: Member성빈,
+    desc: "덕키의 디자인 시스템 “꽥꽥“을 개발합니다. 꽥꽥을 사용하는 개발자와, 꽥꽥으로 덕키를 마주할 사용자에게 항상 최고의 경험을 제공하기 위해 끊임없이 고민하고 도전합니다.",
+    role: ["Android", "Design System Eng"],
+    isSpecialThanks: true
   },
 ];
