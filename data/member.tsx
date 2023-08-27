@@ -7,7 +7,9 @@ import Member상우 from "../static/img/team/상우 frame.png";
 import Member혜진 from "../static/img/team/혜진 frame.png";
 import Member이재웅 from "../static/img/team/이재웅 frame.jpg";
 import Member서정원 from "../static/img/team/서정원 frame.jpg";
+import Member현경 from "../static/img/team/현경 frame.JPG";
 import Placeholder from "../static/img/team/placeholder.png";
+import {Member} from "@site/src/components/pages/team/member/memberCard";
 
 type Member = {
   name: string;
@@ -54,6 +56,12 @@ export const members: Member[] = [
     image: Member이재웅,
     desc: "코드 한 줄 쓸 때마다 기도하는 개발자 이재웅입니다.",
     role: ["Backend"],
+  },
+  {
+    name: "이현경",
+    image: Member현경,
+    desc: '만능 해결사를 꿈꾸는 주니어 기획자',
+    role: ["Product Owner"],
   },
   {
     name: "혀느현스",
