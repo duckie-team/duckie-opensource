@@ -49,7 +49,7 @@ export const members: Member[] = [
     name: "doro",
     image: MemberDoro,
     desc: "열심히 살지 말자",
-    role: ["Project Manager", "iOS", "Backend"],
+    role: ["PM", "iOS", "Backend"],
   },
   {
     name: "이재웅",
