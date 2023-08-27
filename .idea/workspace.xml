@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02f7ca7b-aa7e-4e5f-a123-b369189c9f1e" name="Changes" comment="" />
+    <list default="true" id="02f7ca7b-aa7e-4e5f-a123-b369189c9f1e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +33,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/idongho/WebstormProjects/duckie-opensource/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -56,6 +58,11 @@
       <workItem from="1686549333384" duration="3525000" />
       <workItem from="1686643796938" duration="1824000" />
       <workItem from="1687735546582" duration="5650000" />
+      <workItem from="1689572811989" duration="9299000" />
+      <workItem from="1690822597922" duration="2429000" />
+      <workItem from="1691389214858" duration="598000" />
+      <workItem from="1691834094553" duration="598000" />
+      <workItem from="1692956463265" duration="597000" />
     </task>
     <servers />
   </component>
