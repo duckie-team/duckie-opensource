@@ -49,7 +49,7 @@ export const members: Member[] = [
     name: "doro",
     image: MemberDoro,
     desc: "열심히 살지 말자",
-    role: ["PM", "iOS", "Backend"],
+    role: ["Project Manager", "iOS", "Backend"],
   },
   {
     name: "이재웅",
@@ -61,7 +61,7 @@ export const members: Member[] = [
     name: "이현경",
     image: Member현경,
     desc: '만능 해결사를 꿈꾸는 주니어 기획자',
-    role: ["Product Owner"],
+    role: ["서비스 기획"],
   },
   {
     name: "혀느현스",
